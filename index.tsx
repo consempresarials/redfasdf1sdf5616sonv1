@@ -1,6 +1,10 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
+import { injectSpeedInsights } from '@vercel/speed-insights';
 import App from './App';
+
+// Initialize Vercel Speed Insights
+injectSpeedInsights();
 
 const container = document.getElementById('root');
 if (container) {
